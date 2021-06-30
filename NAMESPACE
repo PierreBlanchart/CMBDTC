@@ -1,0 +1,6 @@
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
+importFrom(xgboost, xgb.dump)
+importFrom(xgboost, xgb.model.dt.tree)
+importFrom(data.table,":=")
+useDynLib(cmbdtc)

@@ -1,0 +1,15 @@
+# Changepath
+BOOST_PATH=/usr/local/
+TBB_LIB=tbb
+
+CXX = g++
+CXX_STD = CXX11
+
+PKG_CPPFLAGS=
+PKG_CPPFLAGS+=-I$(BOOST_PATH)/include
+
+PKG_LIBS=
+PKG_LIBS+=-L$(BOOST_PATH)/lib
+PKG_LIBS+=-l$(TBB_LIB)
+
+MAKEFLAGS=-j8
