@@ -1,11 +1,10 @@
 Package: cmbdtc
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Counterfactual explanations for XGBoost and tree ensemble models
 Version: 0.1.0
 Author: Pierre BLANCHART
 Maintainer: Pierre BLANCHART <pierre.banchart@cea.fr>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: A package for XGboost model interpretability. It addresses the challenging problem of fault detection and diagnosis by using a counterfactual approach. More specifically, given a faulty data, we compute its closest counterfactual example, i.e. the closest virtual point in the input space that is classified as normal by the model. This point is called "virtual" since it is created based only on the model parameters, and, as such, is not necessarily an existing data from the training set (most of the time it is not). Based on the computed counterfactual example, we make a recommendation on the actions to take a minima in order to correct the fault. The package applies to two-class, multi-class and regression XGBoost models. The supported model types according to XGBoost nomenclature are: "binary:logistic", "reg:logistic", "reg:squarederror", and "multi:softprob".
 License: GPL version 3
 Encoding: UTF-8
 LazyData: true

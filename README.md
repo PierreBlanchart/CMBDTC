@@ -1,4 +1,21 @@
-## Install instructions:
+# Counterfactual explanations for XGBoost and tree ensemble models
+
+A package for XGboost model interpretability. It addresses the challenging problem of fault detection and diagnosis by using a counterfactual approach. 
+More specifically, given a faulty data, we compute its closest counterfactual example, i.e. the closest virtual point in the input space that is classified as normal by the model. This point is called "virtual" since it is created based only on the model parameters, and, as such, is not necessarily an existing data from the training set (most of the time it is not). Based on the computed counterfactual example, we make a recommendation on the actions to take a minima in order to correct the fault. The package applies to two-class, multi-class and regression XGBoost models. The supported model types according to XGBoost nomenclature are: "binary:logistic", "reg:logistic", "reg:squarederror", and "multi:softprob".
+
+This R-cpp package is an implementation of the method described in the paper:
+[An exact counterfactual-example-based approach to tree-ensemble models interpretability](https://arxiv.org/abs/2105.14820)
+
+Please cite:
+@article{blanchart2021exact,
+  title={An exact counterfactual-example-based approach to tree-ensemble models interpretability},
+  author={Blanchart, Pierre},
+  journal={arXiv preprint arXiv:2105.14820},
+  year={2021}
+}
+if you are willing to use the package.
+
+## Install instructions
 
 To install the R dependencies, run (if needed) from the R command line:
 ```{r}
