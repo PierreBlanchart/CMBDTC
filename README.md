@@ -38,9 +38,9 @@ R CMD INSTALL -l /INSTALL_PATH ./ --preclean
 
 MNIST dataset: image from class 5 missclassified in class 6. We find the CF example of this image that is classified in class 5 by the model.
 
-Visually, we see that the original missclasified image is transformed into something which looks more like a 5.
-
 ![Alt text](./results/Query_Class_6.png?raw=true "Query image from class 5 (missclassified in class 6)")
+
+Then, we compute the CF example associated with the query image above. Visually, we see that the original missclasified image is transformed into something which looks more like a 5.
 
 ![Alt text](./results/CF_Class_5.png?raw=true "Corresponding CF example rightly classified in class 5")
 
