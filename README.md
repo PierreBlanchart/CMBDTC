@@ -7,14 +7,14 @@ This R-cpp package is an implementation of the method described in the paper:
 [An exact counterfactual-example-based approach to tree-ensemble models interpretability](https://arxiv.org/abs/2105.14820)
 
 Please cite:
----
+```
 @article{blanchart2021exact,
   title={An exact counterfactual-example-based approach to tree-ensemble models interpretability},
   author={Blanchart, Pierre},
   journal={arXiv preprint arXiv:2105.14820},
   year={2021}
 }
----
+```
 if you are willing to use the package.
 
 ## Install instructions
