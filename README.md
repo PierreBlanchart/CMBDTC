@@ -17,6 +17,8 @@ Please cite:
 ```
 if you are willing to use the package.
 
+For a quick overview of the method implemented, you can read [Explaining the decisions of XGBoost models using counterfactual examples](https://towardsdatascience.com/explaining-the-decisions-of-xgboost-models-using-counterfactual-examples-fd9c57c83062)
+
 ## Install instructions
 
 To install the R dependencies, run (if needed) from the R command line:
